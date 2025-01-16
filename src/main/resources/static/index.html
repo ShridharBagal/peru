@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peru Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .content-box {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Peru Chatbot</h1>
+        <input type="text" id="editTextBox" placeholder="Enter some text">
+        <button onclick="updateContent()">Submit</button>
+        <div class="content-box" id="contentBox">
+            <!-- Content will be displayed here -->
+        </div>
+    </div>
+
+    <script>
+        function updateContent() {
+        //  will be displaying the chat reponse here
+            var text = document.getElementById('editTextBox').value;
+            document.getElementById('contentBox').innerText = text;
+        }
+    </script>
+</body>
+</html>
